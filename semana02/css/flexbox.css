@@ -1,0 +1,30 @@
+.box{
+    width:200px;
+    height: 200px;
+    border:1px solid #AAA;
+    background-color: #9ACEFF;
+    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container{
+    margin-bottom: 20px;
+    display:flex;
+    border:1px solid #FF0000;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container2{
+    margin-bottom: 20px;
+    display:flex;
+    border:1px solid #FF0000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items:center;
+}
