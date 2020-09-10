@@ -11,10 +11,11 @@ th,td{
 }
 
 .icono-demo{
-    font-size: 40px;
+    font-size: 300px;
     color: red;
 }
 
 .lista1{
     list-style-type: circle;
+    /* list-style-image: url('images/'); */
 }
