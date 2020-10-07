@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Campeonato de Fútbol</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!--usuario-->
+        <div class="row text-white m-0" style="background-color: #222;">
+            <div class="col-8">
+                Bienvenido <b>User1</b>
+            </div>
+            <div class="col-3 text-right d-none d-lg-block">
+                <small>Último inicio de sesión: 06/10/2020 a las 22:28</small>
+            </div>
+            <div class="col-1 text-right d-none d-lg-block">
+                <a href="index.html" class="text-white">Cerrar Sesión</a>
+            </div>
+        </div>
+        <!--/usuario-->
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">DOW020</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estadios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estadísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jugadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partidos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Configuración
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cambiar Contraseña</a>
+                            <a class="dropdown-item" href="#">Usuarios</a>
+                            <a class="dropdown-item d-lg-none" href="index.html">Cerrar Sesión</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.usm.cl" target="_blank">UTFSM</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+        <!--/navbar-->
+
+        <!--contenido-->
+        <div class="p-2">
+            <div class="row">
+                <div class="col">
+                    <h3>Equipos</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--formulario-->
+                <div class="col-12 col-lg-4 order-lg-1">
+                    <div class="card">
+                        <div class="card-header">
+                            Agregar Equipo
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nombre">Nombre Equipo:</label>
+                                    <input type="text" id="nombre" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nombre">Entrenador:</label>
+                                    <input type="text" id="nombre" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-3 offset-lg-6 pr-lg-0">
+                                            <button class="btn btn-warning btn-block">Cancelar</button>
+                                        </div>
+                                        <div class="col-12 col-lg-3 mt-1 mt-lg-0">
+                                            <button class="btn btn-info btn-block">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--/formulario-->
+
+                <!--tabla-->
+                <div class="col-12 col-lg-8 mt-1 mt-lg-0">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Equipo</th>
+                                <th class="d-none d-lg-block">Entrenador</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                Lorem Ipsums
+                                <div class="d-lg-none">
+                                    <small>Jewell Sein</small>
+                                </div>
+                            </td>
+                            <td class="d-none d-lg-block">Jewell Sein</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top"
+                                    title="Borrar Equipo">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top"
+                                title="Editar Equipo">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                                title="Ver Jugadores">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                            </td>
+                        </tr>                       
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                Consequatur
+                                <div class="d-lg-none">
+                                    <small>Yvon Eneas</small>
+                                </div>
+                            </td>
+                            <td class="d-none d-lg-block">Yvon Eneas</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top"
+                                    title="Borrar Equipo">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top"
+                                title="Editar Equipo">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                                title="Ver Jugadores">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                Sapiente Placeat
+                                <div class="d-lg-none">
+                                    <small>Tootsie Cauldwell</small>
+                                </div>
+                            </td>
+                            <td class="d-none d-lg-block">Tootsie Cauldwell</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top"
+                                    title="Borrar Equipo">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top"
+                                title="Editar Equipo">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                                title="Ver Jugadores">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                Aperiam Autem
+                                <div class="d-lg-none">
+                                    <small>Virge Pickles</small>
+                                </div>
+                            </td>
+                            <td class="d-none d-lg-block">Virge Pickles</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top"
+                                    title="Borrar Equipo">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top"
+                                title="Editar Equipo">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                                title="Ver Jugadores">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                Blanditiis Fugit
+                                <div class="d-lg-none">
+                                    <small>Laney Chivers</small>
+                                </div>
+                            </td>
+                            <td class="d-none d-lg-block">Laney Chivers</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top"
+                                    title="Borrar Equipo">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top"
+                                title="Editar Equipo">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"
+                                title="Ver Jugadores">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--/tabla-->
+              
+            </div>
+
+        </div>
+        <!--/contenido-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
